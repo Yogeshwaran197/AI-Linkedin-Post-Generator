@@ -1,4 +1,4 @@
-#🚀 LinkedIn Post Generator (AI‑Powered)
+🚀 LinkedIn Post Generator (AI‑Powered)
 
 An AI‑powered tool that generates high‑quality, professional LinkedIn posts using LangChain + Groq LLM with smart prompt engineering and a Streamlit user interface.
 
