@@ -15,7 +15,7 @@ length_options = ["Short", "Medium", "Long"]
 
 
 def main():
-    st.title("🚀 AI LinkedIn Post Generator")
+    st.title("AI LinkedIn Post Generator")
     st.markdown("Generate high-quality LinkedIn posts using AI + Few-Shot Learning.")
 
     st.divider()
@@ -27,15 +27,15 @@ def main():
     col1, col2 = st.columns(2)
 
     with col1:
-        selected_tag = st.selectbox("📌 Select Topic", options=tags)
+        selected_tag = st.selectbox("Select Topic", options=tags)
 
     with col2:
-        selected_length = st.selectbox("📏 Select Length", options=length_options)
+        selected_length = st.selectbox("Select Length", options=length_options)
 
     st.divider()
 
     # Generate Button
-    if st.button("✨ Generate Post", use_container_width=True):
+    if st.button("Generate Post", use_container_width=True):
 
         with st.spinner("Generating your LinkedIn post..."):
             post = generate_post(
@@ -45,14 +45,15 @@ def main():
 
         st.success("Post Generated Successfully!")
 
-        st.subheader("📝 Your Generated Post")
+        st.subheader("Your Generated Post")
         st.write(post)
 
         # Copy Section
         st.code(post, language="markdown")
 
-        st.info("Tip: Copy and paste directly into LinkedIn 🚀")
+        st.info("Tip: Copy and paste directly into LinkedIn")
 
 
 if __name__ == "__main__":
+
     main()
