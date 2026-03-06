@@ -6,7 +6,7 @@ from post_generator import generate_post
 # Page Config
 st.set_page_config(
     page_title="AI LinkedIn Post Generator",
-    page_icon="🚀",
+    page_icon="",
     layout="wide"
 )
 
@@ -57,3 +57,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
