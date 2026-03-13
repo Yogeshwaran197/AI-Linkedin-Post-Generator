@@ -44,7 +44,7 @@ class FewShotPosts:
                 df_filtered["tags"].apply(lambda tags: tag in tags)
             ]
 
-        # Random sampling for better few-shot examples
+        # Random sampling 
         if len(df_filtered) > sample_size:
             df_filtered = df_filtered.sample(sample_size)
 
